@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title></title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -14,41 +13,18 @@ content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
-s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
 (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
 fbq('init', '1118719643215347');
 fbq('track', 'PageView');
 </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1118719643215347&ev=PageView&noscript=1"/>
-</noscript>
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
--webkit-tap-highlight-color:transparent;
-}
-
-html,body{
-height:100%;
-overflow:hidden;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
-
-body{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100dvh;
-color:#fff;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;overflow:hidden;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);}
+body{display:flex;justify-content:center;align-items:center;min-height:100dvh;color:#fff;}
 
 .container{
 width:92%;
@@ -72,148 +48,78 @@ background:linear-gradient(90deg,#00f5ff,#00ff94);
 }
 
 .logo-container{
-width:110px;
-height:110px;
-margin:0 auto 15px;
-border-radius:50%;
-overflow:hidden;
+width:110px;height:110px;margin:0 auto 15px;
+border-radius:50%;overflow:hidden;
 border:3px solid rgba(255,255,255,0.12);
 box-shadow:0 0 12px rgba(0,255,255,0.25);
 }
+.logo-container img{width:100%;height:100%;object-fit:cover;}
 
-.logo-container img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
+.bold-profit{font-size:15px;font-weight:700;color:#00ffcc;margin-bottom:12px;}
 
-.bold-profit{
-font-size:15px;
-font-weight:700;
-color:#00ffcc;
-margin-bottom:12px;
-}
-
-.timer-box{
-margin:12px 0;
-font-size:24px;
-font-weight:800;
-color:#00eaff;
-letter-spacing:2px;
-}
+.timer-box{margin:12px 0;font-size:24px;font-weight:800;color:#00eaff;letter-spacing:2px;}
 
 .live-box{
-margin-bottom:18px;
-font-size:14px;
-font-weight:600;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:8px;
-opacity:.9;
+margin-bottom:18px;font-size:14px;font-weight:600;
+display:flex;justify-content:center;align-items:center;gap:8px;opacity:.9;
 }
 
-.live-dot{
-width:8px;
-height:8px;
-background:#00ff94;
-border-radius:50%;
-animation:pulse 1s infinite;
-}
+.live-dot{width:8px;height:8px;background:#00ff94;border-radius:50%;animation:pulse 1s infinite;}
+@keyframes pulse{0%{opacity:1;}50%{opacity:.4;}100%{opacity:1;}}
 
-@keyframes pulse{
-0%{opacity:1;}
-50%{opacity:.4;}
-100%{opacity:1;}
-}
-
-.counter-number{
-font-weight:700;
-color:#ffc6ff;
-transition:opacity .3s ease;
-}
-
-/* ===== BUTTONS ===== */
+.counter-number{font-weight:700;color:#ffc6ff;transition:opacity .3s ease;}
 
 .cta-btn{
-width:100%;
-padding:15px 0;
-border:none;
-border-radius:16px;
-font-size:16px;
-font-weight:700;
-cursor:pointer;
-margin-bottom:14px;
-transition:.25s ease;
-position:relative;
-overflow:hidden;
+width:100%;padding:15px 0;border:none;border-radius:16px;
+font-size:16px;font-weight:700;cursor:pointer;margin-bottom:14px;
+transition:.25s ease;position:relative;overflow:hidden;
 }
 
-/* Soft Shine Effect */
-.cta-btn::after{
-content:"";
-position:absolute;
-top:0;
-left:-100%;
-width:100%;
-height:100%;
-background:linear-gradient(120deg,transparent,rgba(255,255,255,0.25),transparent);
-transition:0.6s;
-}
-
-.cta-btn:hover::after{
-left:100%;
-}
-
-/* PRIMARY – Soft Neon Blue */
 .cta-btn.primary{
 background:linear-gradient(90deg,#00eaff,#0066ff);
-color:#fff;
-box-shadow:0 0 10px rgba(0,120,255,0.35);
+color:#fff;box-shadow:0 0 10px rgba(0,120,255,0.35);
 }
 
-/* SECONDARY – Soft Purple Pink */
 .cta-btn.secondary{
 background:linear-gradient(90deg,#b66dff,#f857c1);
-color:#fff;
-box-shadow:0 0 10px rgba(200,100,255,0.35);
+color:#fff;box-shadow:0 0 10px rgba(200,100,255,0.35);
 }
 
-.cta-btn:active{
-transform:scale(0.96);
-box-shadow:0 0 6px rgba(255,255,255,0.2);
-}
+.cta-btn:active{transform:scale(0.96);}
 
-.footer-text{
-font-size:13px;
-opacity:.7;
-margin-top:10px;
-}
+.footer-text{font-size:13px;opacity:.7;margin-top:10px;}
 </style>
 
 <script>
 let timeLeft = 30;
 let clickLocked = false;
+let timerInterval;
+let liveInterval;
 let liveCount;
 
 function startTimer(){
+clearInterval(timerInterval);
+timeLeft = 30;
 const timer = document.getElementById("countdown");
-const interval = setInterval(()=>{
+timer.textContent = "00:30";
+
+timerInterval = setInterval(()=>{
 timeLeft--;
 timer.textContent = "00:" + (timeLeft < 10 ? "0"+timeLeft : timeLeft);
 if(timeLeft <= 0){
-clearInterval(interval);
+clearInterval(timerInterval);
 timer.textContent = "ENDED";
 }
 },1000);
 }
 
 function startLiveCounter(){
+clearInterval(liveInterval);
 const counterEl = document.getElementById("liveNumber");
 liveCount = Math.floor(Math.random() * 140) + 180;
 counterEl.textContent = liveCount;
 
-setInterval(()=>{
+liveInterval = setInterval(()=>{
 let increment = Math.floor(Math.random() * 2) + 1;
 liveCount += increment;
 counterEl.style.opacity = "0";
@@ -224,6 +130,14 @@ counterEl.style.opacity = "1";
 },4000);
 }
 
+function resetButtons(){
+clickLocked = false;
+document.querySelectorAll(".cta-btn").forEach(btn=>{
+btn.innerHTML = '<i class="fab fa-telegram-plane"></i> ' + btn.dataset.original;
+btn.style.opacity = "1";
+});
+}
+
 function goTelegram(e){
 if(clickLocked) return;
 if(!e.isTrusted) return;
@@ -231,27 +145,33 @@ if(!e.isTrusted) return;
 clickLocked = true;
 const btn = e.currentTarget;
 
+btn.dataset.original = btn.innerText;
 btn.innerHTML = '<i class="fas fa-check"></i> OPENING...';
 btn.style.opacity = "0.85";
 
-fbq('trackCustom', 'Subscribe', {
-button_text: btn.innerText
-});
+fbq('trackCustom', 'Subscribe');
 
 setTimeout(()=>{
 window.location.href = "https://t.me/+_RkEhPgiFO82MmU1";
 },500);
 }
 
+window.addEventListener("pageshow", function(event){
+if(event.persisted){
+resetButtons();
+startTimer();
+startLiveCounter();
+}
+});
+
 window.onload = function(){
 startTimer();
 startLiveCounter();
 };
 </script>
-
 </head>
-<body>
 
+<body>
 <div class="container">
 <h1 class="brand-title">SHAHIL ARMY</h1>
 
@@ -277,8 +197,6 @@ LIVE • <span class="counter-number" id="liveNumber"></span> USERS IN VC
 </button>
 
 <p class="footer-text">Official Channel • Secure Access</p>
-
 </div>
-
 </body>
 </html>
